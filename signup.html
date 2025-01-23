@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/external.css">
+    <style>   
+    /*Styling for text and password input fields*/
+input[type=text], input[type=password] {
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+/*Focus effect for input fields*/
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+/*Padding for input fields*/
+input{
+    padding: 10px 20px;
+}
+/*Styling for labels*/
+label{
+    font-size: 16px;
+}
+/*Hover effect for button*/
+button:hover {
+    opacity:1;
+    background-color: #8e5c54;
+}
+/*Styling for the cancel button*/
+.cancelbtn {
+    padding: 14px 20px;
+    background-color:#04AA6D;
+    color: black;
+    font-size: 16px;
+}
+/*Shared styles for cancel and signup buttons*/
+.cancelbtn, .signupbtn {
+    float: left;
+    width: 100%;
+}
+/*container styling*/
+.container {
+    padding: 16px;
+    background-color: #04AA6D;
+}
+/*Modal Styling*/
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background: #4c6358;
+    padding-top: 50px;
+    font-size: 18px;
+    overflow:scroll;
+}
+/*Modal content styling*/
+.modal-content {
+    margin: 5% auto 15% auto; 
+    width: 80%; 
+}
+/*Horizontal rule styling*/
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+/*Close button styling*/
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+/*Signup button styling*/
+.signupbtn{
+    background-color: #04AA6D;
+    font-size: 16px;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+/*Hover and focus effects for close button*/
+.close:hover,.close:focus {
+    color:#8e5c54;
+    cursor: pointer;
+}
+/*Responsive design for small screen*/
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+    width: 100%;
+    }
+    }
+/*Clearfix for floating element*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/*Flexbox styling for aligment*/
+    .flex3{
+            display: flex;
+            justify-content: flex-start;
+        }
+        /*Background color for div elements*/
+    div{
+            background-color: #4c6358;
+            
+        }
+        /*Hover effect for submit button*/
+    #submit:hover{
+        background-color: #8e5c54;
+        }
+        /*Styling for input elements with Id "input_1"*/
+    #input_1{
+            display: block;
+            padding: 5px 20px;
+            text-decoration:none;
+            border-radius: 20px;
+        }
+        /*Hover Effect for input Id "input_1*/
+    #input_1:hover{
+            background-color: #8e5c54;
+        }
+        /*Section padding*/
+    .section-1{
+            padding: 0px 100px;
+        }  
+        /*Paragraph font size*/
+    p{
+            font-size: 1.8rem;
+        }
+        /*Fieldset Styling*/
+    fieldset{
+            border: none;
+            float:center;
+        }
+        /*Keyframes for centered text animataion*/
+    @keyframes example{
+            0%  {color: black;}
+            25% {color: white;}
+            50% {color: black;}
+        }
+        /*Centered animated text styling*/
+    p{
+            display: flex;
+            color: black;
+            justify-content:flex-start;
+            font-style: oblique;
+            animation-name: example;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+        /*Keyframes for centered text animation*/
+    @keyframes example2{
+            0%  {color: black;}
+            25% {color: white;}
+            50% {color: black;}
+        }
+        /*Centered animated text styling*/
+    #p{
+            display: flex;
+            justify-content:center;
+            font-style: normal;
+            animation-name: example2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+        /*Heading font-family*/
+    h1{
+            font-family:serif, garamond;
+        }
+        /*form padding*/
+    form{
+            padding: 0px 30px;
+        }
+        /*Footer styling */
+    footer{
+            background-color: #4c6358;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        /*Styling for the sign-up button container*/
+        #sign-up{
+            display:flex;
+            justify-content: center;
+            padding: 4px 10px;
+            margin: 80px 100px;
+        }
+</style>
+</head>
+<body>
+    <!--Highlighted promotional text-->
+    <p id="p"><b>Shop Our New Collection Now!!!</b></p>
+    <div>
+        <!--Logo and navigational links-->
+    <a href="index.html"><img src="images/logo removed.png" height="55" width="80" class="flex3" ></a>
+    <nav class="flex1">
+        <a href="aboutus.html" class="navbar"><b>ABOUT US</b></a>
+        <a href="mainpage.html"class="navbar"><b>DISCOVER</b></a>
+        <div class="dropdown">
+            <div>
+                <!--Dropdown Menu-->
+                <button class="dropbtn" class="navbar"><b>NOW TRENDING</b><i></i>
+                </button>
+            </div>
+            <div class="dropdown-content">
+                <a href="men.html">Men Collection</a>
+                <a href="women.html">Women Collection</a>
+            </div>  
+        </div>    
+        <a href="signup.html" class="navbar"><b>SIGN UP</b></a>
+        <!--Search form-->
+        <form>
+        <input type="text" placeholder="search.." name="search" id="search_1">
+        <button id="Submit" type="submit">Submit</button>
+        </form>
+    </nav>
+    </div>
+    <!--Section with heading and text-->
+    <section class="section-1">
+    <h1>Welcome to RawEnvy</h1>
+    <p style="font-style: oblique;">Wear your Boldness</p>
+    </section>
+    <!--Sign up button-->
+<button id="sign-up" onclick="document.getElementById('id01').style.display='flex'"><h3>Sign Up Now</h3></button>
+    <!--Modal for sign -up form-->
+<div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <form class="modal-content" action="/Final project/mainpage.html">
+    <div class="container">
+    <h1>Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+    <label for="email"><b>Email</b></label><br><br>
+    <input type="text" placeholder="Enter Email" name="email" required><br><br>
+
+    <label for="psw"><b>Password</b></label><br><br>
+    <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label><br><br>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required><br><br>
+    <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+
+    <p>By creating an account you agree to our <a href="#" style="color:black">Terms & Privacy</a>.</p>
+    <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn"><b>Cancel</b></button>
+        <button type="submit" class="signupbtn"><b>Sign Up</b></button>
+    </div>
+    </div>
+</form>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+    modal.style.display = "none";
+    }
+}
+</script>
+<footer>
+    <!--Footer content-->
+    <h5>&copy; 2025 RawEnvy, inc / privacy policy / Term of use / sustainability</h5>
+</footer>
+</body>
+</html>

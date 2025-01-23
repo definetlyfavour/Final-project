@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/external.css">
+    <style>
+        /*Reset margin forthe body*/
+        body{
+        margin: 0px 0px;
+        }
+        /*Flexbox layout for specific section*/
+        .flex3{
+            display: flex;
+            justify-content: flex-start;
+        }
+        /*Background color for div element*/
+        div{
+            background-color: #4c6358;
+            
+        }
+        /*Keyframes for text color animations*/
+    @keyframes example{
+            0%  {color: black;}
+            25% {color: white;}
+            50% {color: black;}
+        }
+        /*Styling for a paragraph with id "p"*/
+        #p{
+            display: flex;
+            justify-content:center;
+            animation-name: example;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+        /*Form padding adjustments*/
+        form{
+            padding: 0px 30px;
+        }
+        /*Container grid and flexbox layouts*/
+        .container{
+            display:grid;
+            display: flex;
+            grid-template-columns: auto auto;
+            border:1px solid black;
+            gap: 4px;
+            background: linear-gradient(50deg, #3be395, #5ba37e);
+        }
+        /*Specific styling for grid item*/
+        #item-1{
+            grid-area:1/1/span 1/span 1;
+        }
+        /*Animation for the id "h1" for the color */
+        @keyframes example{
+            0%  {color: black;}
+            25% {color: white;}
+            50% {color: black;}
+        }
+        /*Styling for the main heading*/
+        #h1{
+            position: absolute;
+            top: 450px;
+            left: 49%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 3.8rem;
+            display: flex;
+            color: black;
+            text-align: center;
+            justify-content: center;
+            font-style: oblique;
+            animation-name: example;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        /*Styling for the mission statement paragraph*/
+        #mission-statement{
+            text-align: center;
+            padding: 0px 50px;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+}  
+        /*Footer sales notice styling*/
+        #Sales-footer{
+            text-align: center;
+            padding: 20px 0px;
+}
+    </style>
+</head>
+<body>
+    <!--Highlighted promotional message -->
+    <p id="p"><b>Shop Our New Collection Now!!!</b></p>
+    <div>
+        <!--Logo and navigation links-->
+    <a href="index.html"><img src="images/logo removed.png" height="55" width="80" class="flex3" ></a>
+    <nav class="flex1">
+        <a href="aboutus.html" class="navbar" ><b>ABOUT US</b></a>
+        <a href="mainpage.html"class="navbar"><b>DISCOVER</b></a>
+        <div class="dropdown">
+            <div>
+                <!--Dropdown menu for trending collection -->
+                <button class="dropbtn" class="navbar"><b>NOW TRENDING</b><i></i>
+                </button>
+            </div>
+            <div class="dropdown-content">
+                <a href="men.html">Men Collection</a>
+                <a href="women.html">Women Collection</a>
+            </div>  
+        </div>    
+        <a href="signup.html" class="navbar"><b>SIGN UP</b></a>
+        <!--Search Form-->
+        <form>
+        <input type="text" placeholder="search.." name="search" id="search_1">
+        <button id="Submit"  type="submit">Submit</button>
+        </form>
+    </nav>
+    </div>
+    <!--Section containing the main visual and headline-->
+    <section >
+        <div class="container">
+        <img id="item-1" src="images/ABout us.jfif" width="100%" height="50%">
+        <h1 id="h1">Raw Envy:Wear Your Boldness</h1>
+        </div>
+    </section>
+    <!--Page content-->
+    <h2 style="text-align: center;">About Us</h2>
+    <p id="mission-statement">At Raw Envy, we believe in the power of authentic self-expression through fashion.
+        Our mission is to create bold, unapologetic designs that empower individuals to 
+        embrace their unique style and raw confidence. We are committed to crafting high-quality,
+        sustainable pieces that make a statement, not just in fashion but in the way we live and 
+        create. With every garment, we strive to challenge the norms, inspire self-love, and encourage
+        our community to wear their clothes with pride.</p>
+        <h4 id="Sales-footer" >*Sales only online and ends Feb 22 2025 in US/CA*</h4>
+        <!--Footer content-->
+        <footer>
+            <h5>&copy; 2025 RawEnvy, inc / privacy policy / Term of use / sustainability</h5>
+        </footer>
+</body>
+</html>

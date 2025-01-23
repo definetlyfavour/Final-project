@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women collection</title>
+    <link rel="stylesheet"href="css/external.css">
+    <style>
+    /*Set the margin for the body to remove any default spacing*/
+        body{
+            margin: 0px 0px;
+        }
+
+    /*Keyframe animation for text color change*/
+        @keyframes example{
+            0%  {color: black;}
+            25% {color: white;}
+            50% {color: black;}
+        }
+        /*Styles for paragraph elements with animation*/
+        p{
+            display: flex;
+            justify-content:center;
+            animation-name: example;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+
+        /*Styles for from elements*/
+    form{
+            padding: 0px 30px;
+        }
+        /*Container grid layout*/
+    .container{
+            display:grid;
+            display: flex;
+            grid-template-columns: auto auto;
+            border:1px solid black;
+            gap: 4px;
+        }
+        /*Padding for the main heading */
+        #h1_1{
+            padding: 20px 20px;
+        }
+        /*Define the grid area for the first time*/
+        #item-1{
+            grid-area:1/1/span 1/span 1;
+        }
+        /*Styling for the model grid layout*/
+        .model{
+        display: flex;
+        display: grid;
+        grid-template-columns: auto auto auto auto ;/*Four equal column*/
+        justify-content: space-around;
+        overflow: hidden;/*Hides overflow content*/
+    }
+    </style>
+</head>
+<body>
+    <!--Animated paragraph promoting the collection-->
+    <p><b>Shop Our New Collection Now!!!</b></p>
+    <!--Navigation bar with logo and menu links-->
+    <div style=" background-color: #4c6358;">
+    <a href="index.html"><img src="images/logo removed.png" height="55" width="80" class="flex3" ></a>
+    <nav class="flex1">
+        <!--Navigation links-->
+        <a href="aboutus.html" class="navbar"><b>ABOUT US</b></a>
+        <a href="mainpage.html"class="navbar"><b>DISCOVER</b></a>
+    <div class="dropdown">
+        <div>
+            <button class="dropbtn" class="navbar"><b>NOW TRENDING</b><i></i>
+            </button>
+        </div>
+        <div class="dropdown-content">
+            <a href="men.html">Men Collection</a>
+            <a href="women.html">Women Collection</a>
+        </div>  
+    </div>    
+        <a href="signup.html" class="navbar"><b>SIGN UP</b></a>
+        <!--Search form-->
+        <form>
+        <input type="text" placeholder="search.." id="search_1" name="search">
+        <button id="Submit" type="submit">Submit</button>
+        </form>
+    </nav>
+    </div>
+    <!--Section displaying a collection image-->
+    <section >
+        <div class="container">
+        <img id="item-1" src="images/fashion1.jfif" width="100%">
+        </div>
+    </section>
+    <!--Heading for the women's collection-->
+    <h1 id="h1_1">Shop Women</h1>
+    <!--Grid Layout for showcasing products-->
+    <div class="model">
+        <figure>
+        <img src="images/woman model1.png" height="300" width="300"><!--Product image-->
+        <figcaption><b>Women Green Hoodie collection<br>$142.99</b></figcaption><!--Product Details-->
+        </figure>
+        <figure>
+        <img src="images/woman model3.png" height="300" width="300">
+        <figcaption><b>Women Grey and black Hoodie Limited<br> Edition<br>$150</b></figcaption>
+        </figure>
+        <figure>
+        <img src="images/woman model2.png" height="300" width="300">
+        <figcaption><b>Women blue Hoodie Collection<br>$100</b></figcaption>
+        </figure>
+        <figure>
+        <img src="images/woman model4.png" height="300" width="300">
+        <figcaption><b>Women Grey Zipup Hoodie Collection<br>$130.99</b></figcaption>
+        </figure>
+    </div>
+    <footer>
+        <!--Footer Section-->
+        <h5>&copy; 2025 RawEnvy, inc / privacy policy / Term of use / sustainability</h5>
+    </footer>
+</body>
+</html>

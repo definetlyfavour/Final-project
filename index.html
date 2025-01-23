@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raw Envy</title>
+    <!--External css file link-->
+    <link rel="stylesheet" href="css/external.css">
+
+    <style>
+        /*Center content*/
+        .center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        /*flex container for centering content horizontally*/
+        .flex2{
+            display: flex;
+            text-align: center;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        /*Flex container for left aligned content*/
+        .flex3{
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        /*Navbar button styles*/
+        .navbar2{
+            background-color: #4c6358;
+            margin: 20px 10px;
+            padding: 20px 10px;
+            text-decoration:none;
+            border-radius: 10px;
+            color: black;
+            font-size: large;
+        }
+
+        /*Navbar hover effect*/
+        .navbar2:hover{
+            background-color: #8e5c54;
+        }
+
+        /*Animation for text (shared across element)*/
+        @keyframes example{
+            0%  {color: black;}
+            25% {color: white;}
+            50% {color: black;}
+        }
+
+        /*Animation for paragraph text*/
+        @keyframes example2{
+            0%  {color: black;}
+            25% {color: white;}
+            50% {color: black;}
+        }
+
+        /*Styling for animated paragraph*/
+        #p{
+            display: flex;
+            justify-content:center;
+            animation-name: example2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+        /*Styling for heading with animation*/
+        h1{
+            display: flex;
+            color: black;
+            text-align: center;
+            justify-content: center;
+            font-style: oblique;
+            animation-name: example;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+
+        /*Default background color for div elements*/
+        div{
+            background-color: #4c6358;
+            
+        }
+
+        /*Footer styles*/
+        footer{
+            background-color: #4c6358;
+            text-align: center;
+            padding: 10px 80px; 
+        }
+
+        /*Form padding for the search bar*/
+    form{
+            padding: 0px 30px;
+        }
+    </style>
+</head>
+<body>
+    <!--Promotional banner-->
+    <p id="p"><b>Shop Our New Collection Now!!!</b></p>
+
+    <!--Header section-->
+    <div>
+        <!--Logo linking to the homepage-->
+    <a href="index.html"><img src="images/logo removed.png" height="55" width="80" class="flex3" ></a>
+
+        <!--Navigation bar-->
+    <nav class="flex1">
+        <!--Navigation links-->
+        <a href="aboutus.html" class="navbar"><b>ABOUT US</b></a>
+        <a href="mainpage.html"class="navbar"><b>DISCOVER</b></a>
+
+        <!--Dropdown menu for trending collections-->
+        <div class="dropdown">
+            <div>
+                <button 
+                class="dropbtn" class="navbar"><b>NOW TRENDING</b><i></i>
+                </button>
+            </div>
+            <div class="dropdown-content">
+                <!--Links to specific collections-->
+                <a href="men.html">Men Collection</a>
+                <a href="women.html">Women Collection</a>
+            </div>  
+        </div>    
+
+        <!--Sign up page link-->
+        <a href="signup.html" class="navbar"><b>SIGN UP</b></a>
+
+        <!--Search bar-->
+        <form>
+        <input type="text" placeholder="search.." name="search" id="search_1">
+        <button id="Submit" type="submit">Submit</button>
+        </form>
+    </nav>
+    </div>
+
+    <!--Main content section-->
+    <figure>
+        <!--Main image (brand logo)-->
+        <img src="images/logo removed.png" height="500" width="900" class="center" alt="The logo of my clothing brand">
+        <!--Animated heading-->
+        <h1>Raw Envy: Wear Your Boldness</h1>
+    </figure>
+
+    <!--Call to action button-->
+    <nav class="flex2">
+        <a href="signup.html"class="navbar2"><b>SIGN UP NOW</b></a>
+    </nav>
+    
+    <!--Footer Section-->
+    <footer>
+        <h5>&copy; 2025 RawEnvy, inc / privacy policy / Term of use / sustainability</h5>
+    </footer>
+</body>
+</html>

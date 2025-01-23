@@ -1,0 +1,93 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0px 0px;
+    background-repeat:no-repeat;
+    background: linear-gradient(50deg, #3be395, #5ba37e);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.6rem;
+    font-size: 16px;
+}
+input{
+    padding: 10px 20px;
+}
+#Submit{
+    padding: 10px 20px;
+}
+h1{
+    font-size: 3.2rem;
+}
+.flex1{
+    font-size: 18px;
+}
+footer{
+    background-color: #4c6358;
+    text-align: center;
+    padding: 10px;
+    
+}
+.flex1{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+.navbar{
+        color: black;
+        display: block;
+        padding: 8px 10px;
+        text-decoration:none;
+        border-radius: 50px;
+    }
+.navbar:hover{
+        background-color: #8e5c54;
+    }
+    .dropdown{
+        overflow: hidden;
+        background-color: #4c6358;
+        color:black;
+    }
+    .dropdown .dropbtn{
+        border: none;
+        outline: none;
+        background-color: #4c6358;
+        font-size: medium;
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        font-size: 16px;
+    }
+    .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color:#8e5c54;
+}
+.dropbtn{
+    padding: 8px 10px;
+    color: black;
+    display: block;
+    text-decoration:none;
+    border-radius: 50px;
+}
+.dropbtn:hover{
+    background-color: #8e5c54;
+}
+#search_1{
+    border: 2px solid black;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men collection</title>
+    <link rel="stylesheet"href="css/external.css">
+    <style>
+        /*Reset margin for the body*/
+        body{
+            margin: 0px 0px;
+        }
+        /*Keyframes for text color animation*/
+        @keyframes example{
+            0%  {color: black;}
+            25% {color: white;}
+            50% {color: black;}
+        }
+        /*Padding adjustment for the form*/
+        form{
+            padding: 0px 30px;
+        }
+        /*Styling for the animated promotional manage*/
+        p{
+            display: flex;
+            justify-content:center;
+            animation-name: example;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+        /*Conyainer layout with grid and flexbox*/
+    .container{
+            display:grid;
+            display: flex;
+            grid-template-columns: auto auto;
+            border:1px solid black;
+            gap: 4px;
+    } 
+        /*Grid area for the first item*/
+    #item-1{
+            grid-area:1/1/span 1/span 1;
+    }
+        /*Styling for text with a strikethrough*/
+    span{
+        text-decoration: line-through;color: white;
+    }
+        /*Flexbox layout for the model section*/
+    .model{
+        display: flex;
+        justify-content: space-around;
+    } 
+        /*Padding for the main heading*/
+    #h1_1{
+            padding: 20px 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--Higlighted promotional message-->
+    <p><b>Shop Our New Collection Now!!!</b></p>
+    <div style=" background-color: #4c6358;">
+        <!--Logo and navigation links-->
+    <a href="index.html"><img src="images/logo removed.png" height="55" width="80" class="flex3" ></a>
+    <nav class="flex1">
+        <a href="aboutus.html" class="navbar"><b>ABOUT US</b></a>
+        <a href="mainpage.html"class="navbar"><b>DISCOVER</b></a>
+    <div class="dropdown">
+        <div>
+            <!--Dropdown menu for trending collection-->
+            <button class="dropbtn" class="navbar"><b>NOW TRENDING</b><i></i>
+            </button>
+        </div>
+        <div class="dropdown-content">
+            <a href="men.html">Men Collection</a>
+            <a href="women.html">Women Collection</a>
+        </div>  
+    </div>    
+        <a href="signup.html" class="navbar"><b>SIGN UP</b></a>
+        <!--Search form-->
+        <form>
+        <input type="text" placeholder="search.." id="search_1" name="search">
+        <button id="Submit" type="submit">Submit</button>
+        </form>
+    </nav>
+    </div>
+    <!--Section containing the main page-->
+    <section >
+        <div class="container">
+        <img id="item-1" src="images/men top.jfif" width="100%">
+        </div>
+    </section>
+    <!--Heading for the shop men section-->
+    <h1 id="h1_1">Shop Men</h1>
+    <!--Section showcasing men's models-->
+    <div class="model">
+        <figure>
+        <img src="images/men model1.png" height="300" width="300">
+        <figcaption><b>Men black collection<br>$62.99</b></figcaption>
+        </figure>
+        <figure>
+        <img src="images/men model2.png" height="300" width="300">
+        <figcaption><b>Men black Hoodie Limited<br> Edition<br>$100</b></figcaption>
+        </figure>
+        <figure>
+        <img src="images/men model3.png" height="300" width="300">
+        <figcaption><b>Raw Envy limited Collection<br>$90</b><span>$100</span></figcaption>
+        </figure>
+        <figure>
+        <img src="images/men model4.png" height="300" width="300">
+        <figcaption><b>Men black Zipup Hoodie Collection<br>$110.99</b></figcaption>
+        </figure>
+    </div>
+    <!--Footer Content-->
+    <footer>
+        <h5>&copy; 2025 RawEnvy, inc / privacy policy / Term of use / sustainability</h5>
+    </footer>
+</body>
+</html>
